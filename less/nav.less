@@ -1,0 +1,77 @@
+nav {
+
+	width: 50%;
+	margin: 0 auto;
+
+	text-align: center;
+
+			a {
+				color: @linkColor;
+				text-decoration: none;
+
+
+				p {
+					display: inline-block;
+					background-color: blue;
+					color: @hoverColor;
+					text-decoration: none;
+
+					&:hover{
+					color: black;
+					}
+					&:visited{
+					color: @visitedColor;
+					}
+
+
+					width: 30%;
+					
+					.navButton(@navButtonColor, 30px, 10px, 40px);
+
+
+					margin: 0 auto;
+
+					margin-left: 10px;
+					margin-top: 10px;
+
+					font-family: Helvetica, sans-serif;
+
+					}
+			}	
+
+		/* iPhone 4 ----------- */
+		@media
+		only screen and (-webkit-min-device-pixel-ratio : 1.5),
+		only screen and (min-device-pixel-ratio : 1.5) {
+			p{
+				display: block;
+				width: 60%;
+
+
+
+				.navButton(@navButtonColor, 30px 0, 10px 50px, 30px);
+				margin: 0 auto;
+				margin-top: 10px;
+
+			}
+		}
+
+		@media only screen and (min-device-width : @navSizeChange) and (max-device-width : @iPadLandscape) and (orientation : portrait) {
+
+			p{
+				display: block;
+				width: 60%;
+				font-size: 120%;
+
+
+
+				.navButton(@navButtonColor, 30px 0, 10px 50px, 30px);
+				margin: 0 auto;
+				margin-top: 10px;
+
+			}
+
+}
+
+}
+

@@ -1,0 +1,25 @@
+.clearFix{
+	*zoom: 1;
+	&:before,
+	&:after {
+	content: "";
+	clear: both;
+	display:block;
+
+	line-height: 0;
+	}
+}
+
+.rounded(@radius: 5px){
+	-webkit-border: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.navButton(@bg, @radius: 5px, @pad: 10px, @mar: 10px) {
+	background-color: @bg;
+	text-align: center;
+	padding: @pad;
+	margin: @mar 0 @mar 0;
+	.rounded(@radius);
+}

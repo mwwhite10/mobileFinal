@@ -1,0 +1,228 @@
+.clearFix {
+  *zoom: 1;
+}
+.clearFix:before,
+.clearFix:after {
+  content: "";
+  clear: both;
+  display: block;
+  line-height: 0;
+}
+* {
+  margin: 0px;
+}
+body {
+  background-color: #2e242d;
+}
+p {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  line-height: 20px;
+  font-family: Arial;
+}
+img {
+  width: 70%;
+  border: solid;
+  border-color: black;
+  border-width: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-left: 12%;
+}
+#container {
+  max-width: 800px;
+  background-color: #B7D0BD;
+  margin: 0 auto;
+  min-height: 500px;
+  border-radius: 10px;
+}
+#container form {
+  font-family: Helvetica;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  font-size: 10px;
+  color: #000000;
+  margin-top: 30px;
+}
+header {
+  background-color: #525566;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  min-height: 150px;
+  /* iPhone 4 ----------- */
+
+}
+header h1 {
+  position: relative;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 64px;
+  text-shadow: 5px 5px 10px #333333;
+  top: 40px;
+  left: 30px;
+}
+header h2 {
+  position: absolute;
+  float: left;
+  z-index: 1;
+  font-family: Helvetica, sans-serif;
+  color: #1f1f1f;
+  text-shadow: 1px 1px 10px #cbcbcb;
+  font-size: 28px;
+  font-color: grey;
+  top: 86px;
+  left: 60px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  header h1 {
+    font-size: 70px;
+    width: 90%;
+    margin: 0 auto;
+    left: 0px;
+    text-align: center;
+  }
+  header h2 {
+    display: none;
+  }
+}
+@media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
+  header h1 {
+    font-size: 70px;
+    width: 90%;
+    margin: 0 auto;
+    left: 0px;
+    text-align: center;
+  }
+  header h2 {
+    display: none;
+  }
+}
+nav {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  /* iPhone 4 ----------- */
+
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+}
+nav a p {
+  display: inline-block;
+  background-color: blue;
+  color: #ffffff;
+  text-decoration: none;
+  width: 30%;
+  background-color: #849e91;
+  text-align: center;
+  padding: 10px;
+  margin: 40px 0 40px 0;
+  -webkit-border: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family: Helvetica, sans-serif;
+}
+nav a p:hover {
+  color: black;
+}
+nav a p:visited {
+  color: #999999;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  nav p {
+    display: block;
+    width: 60%;
+    background-color: #849e91;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 30px 0 30px 0;
+    -webkit-border: 30px 0;
+    -moz-border-radius: 30px 0;
+    border-radius: 30px 0;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-device-width: 800px) and (max-device-width: 1024px) and (orientation: portrait) {
+  nav p {
+    display: block;
+    width: 60%;
+    font-size: 120%;
+    background-color: #849e91;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 30px 0 30px 0;
+    -webkit-border: 30px 0;
+    -moz-border-radius: 30px 0;
+    border-radius: 30px 0;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+#content {
+  padding: 20px;
+  min-height: 500px;
+  margin: 20px;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  *zoom: 1;
+}
+#content .left {
+  position: relative;
+  float: left;
+  width: 60%;
+}
+#content .right {
+  padding: 15px;
+  margin-left: 15px;
+  margin-top: 80px;
+  float: right;
+  width: 33%;
+  line-height: 25px;
+  background-color: #e35b4b;
+  border-radius: 15px;
+}
+#content p {
+  line-height: 25px;
+}
+#content h1 {
+  margin-bottom: 15px;
+  font-size: 200%;
+}
+@media only screen and (min-device-width: 800px) and (max-device-width: 1024px) and (orientation: portrait), only screen and (max-width: 800px) {
+  #content h1 {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 34px;
+  }
+  #content p {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 120%;
+  }
+  #content .left {
+    width: 100%;
+    float: none;
+  }
+  #content .right {
+    width: 70%;
+    margin: 0 auto;
+    float: none;
+  }
+}
+#content:before,
+#content:after {
+  content: "";
+  clear: both;
+  display: block;
+  line-height: 0;
+}

@@ -1,0 +1,76 @@
+header {
+	background-color: @headerBG;
+
+	border-radius: 10px 10px 0px 0px;
+
+	position: relative;
+	min-height: 150px;
+
+	h1 {
+
+		position: relative;
+
+		color: @whiteText;
+		font-family: Helvetica;
+		font-size: 64px;
+		text-shadow: 5px 5px 10px #333333;
+
+		top: 40px;
+		left: 30px;
+
+	}
+
+	h2 {
+		position: absolute;
+
+		float: left;
+
+		z-index: 1;
+
+		font-family: Helvetica, sans-serif;
+		color: #1f1f1f;
+		text-shadow: 1px 1px 10px #cbcbcb;
+
+		font-size: 28px;
+		font-color: grey;
+
+		top:86px;
+
+		left:60px;
+	}
+
+	/* iPhone 4 ----------- */
+	@media
+	only screen and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-device-pixel-ratio : 1.5) {
+		h1 {
+
+				font-size: 70px;
+				width: 90%;
+				margin: 0 auto;
+				left: 0px;
+				text-align: center;
+			}
+
+			h2 {
+				display: none;
+			}
+	}
+
+	@media only screen and (max-device-width : @navSizeChange), only screen and (max-width : @navSizeChange) {
+			
+			h1 {
+
+				font-size: 70px;
+				width: 90%;
+				margin: 0 auto;
+				left: 0px;
+				text-align: center;
+			}
+
+			h2 {
+				display: none;
+			}
+		}
+
+}
